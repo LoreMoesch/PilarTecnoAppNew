@@ -53,19 +53,20 @@ class Profile extends React.Component {
                     </View>
                 </View>
                 <View style={{ flex: 1, top: 100, width: width * 0.5 }}>
-                    <Button title='Salir' onPress={() => {
-                        auth()
-                            .signOut()
-                            .then(async () => {
-                                console.log('User signed out!'),
-                                    this.props.setUser({ user: null })
-                                try {
-                                    await AsyncStorage.delItem('isloged')
-                                } catch (e) {
-                                    console.log('Hubo un error :' + e)
-                                }
-                            })
-                    }} />
+                    <Button title='Salir'
+                        onPress={() => {
+                            auth()
+                                .signOut()
+                                .then(async () => {
+                                    console.log('User signed out!'),
+                                        this.props.setUser({ user: null })
+                                    try {
+                                        await AsyncStorage.delItem('isloged')
+                                    } catch (e) {
+                                        console.log('Hubo un error :' + e)
+                                    }
+                                })
+                        }} />
                 </View>
             </SafeAreaView>
         )
