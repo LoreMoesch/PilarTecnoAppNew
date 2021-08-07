@@ -48,6 +48,7 @@ export default class Map extends React.Component {
         })
     }
 
+
     // componentDidMount = () => {
     //     hasLocationPermission();
     //     this._getLocation()
