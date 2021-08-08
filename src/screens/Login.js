@@ -124,6 +124,7 @@ const Login = (props) => {
                     }}
                 />
 
+
                 <TouchableOpacity style={styles.forgotButton} onPress={() => { }}>
                     <Text style={styles.navButtonText}>Loguearse con Redes Sociales </Text>
                 </TouchableOpacity>
@@ -214,6 +215,7 @@ const styles = StyleSheet.create({
         marginTop: 15,
 
     },
+
     forgotButton: {
         marginVertical: 35,
     },
